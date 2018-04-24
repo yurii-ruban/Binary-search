@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>8</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>688</x>
+      <y>184</y>
+      <w>176</w>
+      <h>192</h>
+    </coordinates>
+    <panel_attributes>SomeClass
+--
+-x: int
+-y: int
+-w: int
+-h :int
+-direct: int
+-timer: QTimer
+--
++SomeClass(parent: QObject)
++get x(): int
++get_y(): int
++get_w(): int
++get_h(): int
++get_direct(): int
++setter(x: int, direct: int)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>928</x>
+      <y>256</y>
+      <w>104</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>QTimer
+--
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>856</x>
+      <y>256</y>
+      <w>88</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+&lt; live in</panel_attributes>
+    <additional_attributes>10.0;20.0;90.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>400</x>
+      <y>224</y>
+      <w>208</w>
+      <h>136</h>
+    </coordinates>
+    <panel_attributes>MainWindow
+--
+-m_thread_1:QThread
+-m_thread_2: QThread
+-m_some1: SomeClass
+-m_some2: SomeClass
+-m_manager: Saver
+--
++
++
++</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>360</x>
+      <y>400</y>
+      <w>184</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>Saver
+--
+-db: QSqlDatabase
+-log: QFile
+--
++read_file(S: SomeClass)
++write_file(S: SomeClass)
++read_bataBase(S: SomeClass)
++write_dataBase(S: SomeClass)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>304</x>
+      <y>304</y>
+      <w>112</w>
+      <h>168</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+&lt; live in</panel_attributes>
+    <additional_attributes>120.0;10.0;10.0;10.0;10.0;190.0;70.0;190.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>600</x>
+      <y>256</y>
+      <w>104</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+&lt; live in</panel_attributes>
+    <additional_attributes>10.0;20.0;110.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>536</x>
+      <y>368</y>
+      <w>264</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>lt=-
+works with &gt;
+m1=0..*
+m2=1..*
+</panel_attributes>
+    <additional_attributes>10.0;110.0;290.0;110.0;290.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>536</x>
+      <y>80</y>
+      <w>120</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>QObject
+--
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>496</x>
+      <y>104</y>
+      <w>120</w>
+      <h>136</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+inherits &gt;</panel_attributes>
+    <additional_attributes>130.0;10.0;130.0;50.0;10.0;50.0;10.0;150.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>592</x>
+      <y>104</y>
+      <w>200</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+&lt; inherits</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0;230.0;50.0;230.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>232</x>
+      <y>256</y>
+      <w>96</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>QThread
+--
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>320</x>
+      <y>264</y>
+      <w>96</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+live in &gt;</panel_attributes>
+    <additional_attributes>100.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+</diagram>
